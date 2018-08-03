@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Layout from './Layout'
-import Header from './Header'
-import Content from './Content'
-import Footer from './Footer'
+import Layout from './Layout/Layout'
+import Header from './Header/Header'
+import Content from './Content/Content'
+import Footer from './Footer/Footer'
 
 class Index extends Component {
   render() {

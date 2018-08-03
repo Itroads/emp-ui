@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class Layout extends Component {
+  static propTypes = {
+    children: PropTypes.array
+  }
   render () {
     return (
       <div className='container'>
