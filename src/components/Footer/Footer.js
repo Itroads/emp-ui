@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-
+import style from './foot.less'
 class Footer extends Component {
   render () {
     return (
-      <footer>eMP Footer</footer>
+      <footer className={style.header}>eMP Footer</footer>
     )
   }
 }

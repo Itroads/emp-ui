@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+// import './header.less'
+import style from './header.less'
 
 class Header extends Component {
   render () {
     return (
-      <header>eMP header</header>
+      <header className={style.header}>eMP header</header>
     )
   }
 }
