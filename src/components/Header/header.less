@@ -1,7 +1,28 @@
-@color: red;
+@import '~@styles/themes/emp-theme-blue.less';
 
 .header {
-  background: @color;
-  font-family: 'Courier New', Courier, monospace;
+  height: 50px;
   display: flex;
+  background: @bgColor1;
+  color: @txtColor1;
+  .logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    img {
+      height: 40px;
+      margin: 0 10px;
+    }
+    span {
+      font-size: 24px;
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+  .operation {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }

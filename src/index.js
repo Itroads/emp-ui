@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Index from './components/Index';
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import '@util/skin'
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
