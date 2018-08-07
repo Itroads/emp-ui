@@ -1,3 +1,10 @@
+/**
+ * @author Jiang yang
+ * 
+ * @description 生成皮肤样式
+ * @version 0.0.1
+ */
+
 const skin = {}
 
 skin.iceBlue = {
@@ -11,12 +18,10 @@ skin.iceBlue = {
   // left menu
   leftMenuBgColor: '#2c3e50',
   leftMenuBorderColor: '#2c3e50',
-  leftMenuShadowColor: 'black',
 
   // right menu
   rightMenuBgColor: '#2c3e50',
   rightMenuBorderColor: '#2c3e50',
-  rightMenuShadowColor: 'black',
 
   // content
   contentBgColor: '#2c3e50',
@@ -39,17 +44,15 @@ skin.lightBlue = {
   footerShadowColor: 'black',
 
   // left menu
-  leftMenuBgColor: 'blue',
+  leftMenuBgColor: 'white',
   leftMenuBorderColor: '#2c3e50',
-  leftMenuShadowColor: 'black',
 
   // right menu
-  rightMenuBgColor: 'blue',
+  rightMenuBgColor: 'white',
   rightMenuBorderColor: '#2c3e50',
-  rightMenuShadowColor: 'black',
 
   // content
-  contentBgColor: 'blue',
+  contentBgColor: 'white',
 }
 
 let getSkinStyle = (skin) => {
@@ -59,7 +62,7 @@ let getSkinStyle = (skin) => {
   return `
     .skin-app {
       color: ${skin.appColor};
-      background-color: ${skin.appColor};
+      background-color: ${skin.appBgColor};
     }
     .skin-header {
       background-color: ${skin.headerBgColor};
@@ -67,12 +70,10 @@ let getSkinStyle = (skin) => {
     .skin-left-menu {
       background-color: ${skin.leftMenuBgColor};
       border-right: 1px solid ${skin.leftMenuBorderColor};
-      box-shadow: 0 2px 10px ${skin.leftMenuShadowColor};
     }
     .skin-right-menu {
       background-color: ${skin.rightMenuBgColor};
-      border-right: 1px solid ${skin.rightMenuBorderColor};
-      box-shadow: 0 2px 10px ${skin.rightMenuShadowColor};
+      border-left: 1px solid ${skin.rightMenuBorderColor};
     }
     .skin-content {
       background-color: ${skin.contentBgColor};
@@ -81,7 +82,7 @@ let getSkinStyle = (skin) => {
       background-color: ${skin.footerBgColor};
       box-shadow: 0 -1px 10px ${skin.footerShadowColor};
     }
-  `;
+  `
 }
 
 let setSkinStyle = (skin) => {

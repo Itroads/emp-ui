@@ -1,20 +1,16 @@
-@import '~@styles/themes/emp-theme-blue.less';
+// @import '~@styles/themes/emp-theme-blue.less';
 
 .container {
   flex: 1;
   display: flex;
-  background: @bgColor2;
-  .menu {
+  .leftMenu {
     flex: 0 1 230px;
-    border-right: 1px solid @borderColor1;
-    box-shadow: 0 2px 10px @shadowColor1;
   }
   .content {
     flex: 1 1 auto;
+    margin: 0 4px;
   }
-  .operateMenu {
+  .rightMenu {
     flex: 0 1 230px;
-    border-left: 1px solid @borderColor1;
-    box-shadow: 0 2px 10px @shadowColor1;
   }
 }

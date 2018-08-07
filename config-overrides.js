@@ -14,7 +14,7 @@ module.exports = function override(config, env) {
   if (env === "production") {
 
     // For require source file outside of src/. ( remove ModuleScopePlugin )
-    config.resolve.plugins = []
+    // config.resolve.plugins = []
 
     // For css module
     config.module.rules[1].oneOf[2].loader[2].options['modules'] = true
@@ -33,7 +33,7 @@ module.exports = function override(config, env) {
   } else {
 
     // For require source file outside of src/. ( remove ModuleScopePlugin )
-    config.resolve.plugins = []
+    // config.resolve.plugins = []
 
     // For css module
     config.module.rules[1].oneOf[2].use[1].options['modules'] = true
