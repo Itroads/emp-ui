@@ -11,7 +11,7 @@ class Header extends Component {
 
   render () {
     return (
-      <header className={style.header + ' ' + 'skin-header'}>
+      <header className={style.header + ' skin-header'}>
         <div className={style.logo}>
           <img src={logoImg} alt="eMP logo"/>
           <span>Enterprise Management Portal</span>

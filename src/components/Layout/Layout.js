@@ -8,7 +8,7 @@ class Layout extends Component {
   }
   render () {
     return (
-      <div className={style.container + ' ' + 'skin-app'}>
+      <div className={style.container + ' skin-app'}>
         <div className={style.header}>
           {this.props.children[0]}
         </div>
